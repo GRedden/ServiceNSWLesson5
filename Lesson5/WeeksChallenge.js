@@ -27,7 +27,10 @@ async function Program() {
     console.log("Magical Guitars.Com");
     let myName = "Magical Guitars.Com";
     console.log(myName);
-    myName = await askQuestion ("Please enter your name;")
+    myName = await askQuestion ("Please enter your name;");
+    myName = await askQuestion ("Guitar Make Trading;");
+    myName = await askQuestion ("Up grade new model Yes/No;");
+    myName = await askQuestion ("Trade In Value $$;");
 }
 
 Program().then(() => {
