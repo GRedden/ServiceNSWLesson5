@@ -1,6 +1,6 @@
 // Create a function with a greeting, business name, using
 // Magical Guitars.Com as the business name, option to greet and obtain customer Contact details.
-// what is the customer trad in/expecting - new model guitar or $$ value for trading item.
+// what is the customer tradein/expecting - new model guitar or $$ value for trading item.
 
 
 
@@ -28,9 +28,9 @@ async function Program() {
     let myName = "Magical Guitars.Com";
     console.log(myName);
     myName = await askQuestion ("Please enter your name;");
-    myName = await askQuestion ("Guitar Make Trading;");
-    myName = await askQuestion ("Up grade new model Yes/No;");
-    myName = await askQuestion ("Trade In Value $$;");
+    myGuitar = await askQuestion ("Guitar Make Trading;");
+    myGuitar = await askQuestion ("Up grade new model Yes/No;");
+    myValue = await askQuestion ("Trade In Value $$;");
 }
 
 Program().then(() => {
