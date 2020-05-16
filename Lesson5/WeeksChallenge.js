@@ -1,5 +1,5 @@
-// Create a function with a greeting, business name, using
-// Magical Guitars.Com as the business name, option to greet and obtain customer Contact details.
+// Create a function with a greeting, business name, 
+// Using Magical Guitars.Com as the business name, option to greet and obtain customer Contact details.
 // what is the customer tradein/expecting - new model guitar or $$ value for trading item.
 
 
