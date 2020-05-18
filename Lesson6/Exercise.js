@@ -114,8 +114,23 @@ let myPet = new Pet("Rex", 4, 15);
 console.log(Pet.getOwnerById(myPet, owners));
 
 
-
 // 8 Create a class called Square with a single property, sideLength and create a constructor that assigns that value
+
+class Square {
+    constructor(sideLength) {
+        this.sideLength = sideLength;
+    }
+
+    get area(){
+        return this.sideLength ** 2;
+    }
+}
+
+let sq = new Square(10)
+console.log(sq.area);
+
+
+
 
 // 9 Create a getter that returns the area of the Square (hint, the area is sideLength * sideLength)
 
