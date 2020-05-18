@@ -31,8 +31,10 @@ async function Program() {
     let myGuitar = await askQuestion ("Guitar Make Trading;");
     let ShouldUpgrade = await askQuestion ("Up grade new model Yes/No;");
     myValue = await askQuestion ("Trade In Value $$;");
-    var Guitar = "Fender Strat/Taylor";
-
+    myGuitar = await askQuestion ("Fender Strat/Taylor");    
+    myValue = await askQuestion ("Price $5000 - Trade in Value $$");
+    console.log("Thank you for visiting Magical Guitars.Com");
+   
 }
 
 Program().then(() => {

@@ -25,6 +25,31 @@ async function Program() {
         console.log("[3] Multiply numbers");
         console.log("[4] Exit");
         let ans = await askQuestion("Enter a number to select an option from the list above");
+      
+        switch (ans) {
+            case "1":
+                console.log();
+                console.log("You have selected the Add numbers function");
+                let input1 = await askQuestion("Enter the first number: ");
+                let number1 = parseInt(input1);
+                let input2 = await askQuestion("Enter the second number: ");
+                let number2 = parseInt(input2);
+                console.log(`The sum of ${number1} and ${number2} is ${number1 + number2}`);
+                console.log();
+            case "2":
+                console.log();
+                console.log("You have selected the Subtract numbers function");
+                let input1 = await askQuestion("Enter the first number: ");
+                let number1 = parseInt(input1);
+                let input2 = await askQuestion("Enter the second number: ");
+                let number2 = parseInt(input2);
+                console.log(`The difference between ${number1} and ${number2} is ${number1 - number2}`);
+                console.log();
+            case "3":
+
+            case "4":
+        }
+
         if(ans == "1") {
             console.log();
             console.log("You have selected the Add numbers function");
