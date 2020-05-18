@@ -33,6 +33,7 @@ async function Program() {
     myValue = await askQuestion ("Trade In Value $$;");
     myGuitar = await askQuestion ("Fender Strat/Taylor");    
     myValue = await askQuestion ("Price $5000 - Trade in Value $$");
+    var x = 5000 - 1000;
     console.log("Thank you for visiting Magical Guitars.Com");
    
 }
