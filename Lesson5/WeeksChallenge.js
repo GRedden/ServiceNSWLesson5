@@ -27,13 +27,12 @@ async function Program() {
     console.log("Magical Guitars.Com");
     let myName = "Magical Guitars.Com";
     console.log(myName);
-    myName = await askQuestion ("Please enter your name;");
+    myName = await askQuestion ("Please enter your name and contact;");
     let myGuitar = await askQuestion ("Guitar Make Trading;");
     let ShouldUpgrade = await askQuestion ("Up grade new model Yes/No;");
     myValue = await askQuestion ("Trade In Value $$;");
-    myGuitar = await askQuestion ("Fender Strat/Taylor");    
-    myValue = await askQuestion ("Price $5000 - Trade in Value $$");
-    var x = 5000 - 1000;
+    myGuitar = await askQuestion ("FenderStrat/Taylor;");
+    myValue = await askQuestion ("Price $5000 each - Trade in Value $$");
     console.log("Thank you for visiting Magical Guitars.Com");
    
 }
@@ -42,3 +41,4 @@ Program().then(() => {
     process.exit(0);
 });
 
+       
