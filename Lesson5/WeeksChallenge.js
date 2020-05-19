@@ -33,7 +33,9 @@ async function Program() {
     myValue = await askQuestion ("Trade In Value $$;");
     myGuitar = await askQuestion ("FenderStrat/Taylor;");
     myValue = await askQuestion ("Price $5000 each - Trade in Value $$");
-    console.log("Thank you for visiting Magical Guitars.Com");
+    console.log ("Thank you for visiting Magical Guitars.Com");
+    console.log ("Kindly Leave us feedBack about the Service"); 
+    
    
 }
 
