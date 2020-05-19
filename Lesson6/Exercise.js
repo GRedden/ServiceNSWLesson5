@@ -132,6 +132,7 @@ console.log(sq.area);
 
 
 
+
 // 9 Create a getter that returns the area of the Square (hint, the area is sideLength * sideLength)
 
 
