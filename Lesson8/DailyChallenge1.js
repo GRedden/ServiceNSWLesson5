@@ -4,9 +4,9 @@
 
 let pets = [
     {
-        name: "Rex",
+        name: "Tonto",
         age: 4,
-        ownerName: "Luke"
+        ownerName: "Glen"
     }, {
         name: "Spot",
         age: 7,
@@ -32,13 +32,13 @@ let pets = [
 
 // 1 Use the Array.filter function to create an array of all the pets owned by Luke.
 
-function ownedByLuke(pet) {
-    return pet.ownerName == "Luke";
+function ownedByGlen(pet) {
+    return pet.ownerName == "Glen";
 }
 
-let lukesPets = pets.filter(pet => pet.ownerName == "Luke");
+let glensPets = pets.filter(pet => pet.ownerName == "Glen");
 
-// console.log(lukesPets);
+console.log(glensPets);
 
 // 2 Use the Array.map function to create an array of all the names of the owners.
 
@@ -48,7 +48,7 @@ function getOwner(pet) {
 
 let owners = pets.map(pet => pet.ownerName);
 
-// console.log(owners);
+console.log(owners);
 
 // 3 Use the Array.find function to retrieve the pet owned by Shaggy
 function findShaggysPet(pet) {
@@ -56,24 +56,20 @@ function findShaggysPet(pet) {
 }
 
 let shaggysPet = pets.find(pet => pet.ownerName == "Shaggy");
-// console.log(shaggysPet);
+console.log(shaggysPet);
 
 // 4 Use the Array.filter function to create an array of all the pets that are less than 5 years old and that have either a pet or owner name that starts with "S"
 
-function filterCallback(pet) {
+
+
+const filterCallback = pet => {
     let lessThan5 = pet.age < 5;
     let hasS = pet.name[0] == "S" || pet.ownerName[0] == "S";
     return lessThan5 && (hasS);
 }
 
-// const filterCallback = pet => {
-//     let lessThan5 = pet.age < 5;
-//     let hasS = pet.name[0] == "S" || pet.ownerName[0] == "S";
-//     return lessThan5 && (hasS);
-// }
-
 let filteredPets = pets
     .filter(pet => pet.age < 5)
     .filter(pet => pet.name[0] == "S" || pet.ownerName[0] == "S");
-// console.log(filteredPets);
+console.log(filteredPets);
 
